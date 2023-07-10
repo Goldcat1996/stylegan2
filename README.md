@@ -1,4 +1,5 @@
 #训练自己的数据
+
     修改参数：
         显卡：CUDA_VISIBLE_DEVICES
         端口：port 如果需要同时训练两个任务，保证port不一样
@@ -12,6 +13,7 @@
         bash scripts/train/train.sh
 
 #训练剪枝的模型
+
     设置 config.py 文件中参数：
         debug_channels_size = True
         channels_ratio的选择表示需要网络会减小的通道数，比如channels_ratio = '12'表示通道数减小1/2
